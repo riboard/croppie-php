@@ -11,7 +11,7 @@ function base64_to_jpeg( $base64_string, $dir, $output_file ) {
     return( $output_file );
 }
 
-$dir_moradores = "imagens-croppie/";
-$value = base64_to_jpeg( $imagem[1], $dir_moradores, md5($imagem[1]).'.jpg' );
+$dir = "imagens-croppie/";
+$value = base64_to_jpeg( $imagem[1], $dir, md5($imagem[1]).'.jpg' );
 
 echo $value;
